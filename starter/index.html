@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recommendation App</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <main class="app-shell">
+            <header class="top-bar">
+                <div class="brand">
+                    <div class="logo">&lt;/&gt;</div>
+                    <div><h2>HSDE Technology</h2></div>
+                </div>
+            </header>
+
+            <section class="hero">
+                <h1>What Should You Do Today?</h1>
+                <p>Answer a few questions and get a fun recommendation!</p>
+            </section>
+
+            <section class="question-card">
+                <h2>What kind of mood are you in?</h2>
+
+                <div class="mood-grid">
+                    <button class="mood-card warm" data-mood="happy"><span class="mood-icon">😀</span><span>Happy</span></button>
+                    <button class="mood-card blue" data-mood="relaxed"><span class="mood-icon">☁️</span><span>Relaxed</span></button>
+                    <button class="mood-card yellow" data-mood="curious"><span class="mood-icon">🤔</span><span>Curious</span></button>
+                    <button class="mood-card pink" data-mood="energetic"><span class="mood-icon">⚡</span><span>Energetic</span></button>
+                </div>
+            </section>
+
+            <button class="recommend-button" id="recommend-button">Get Recommendation ✨</button>
+            <p class="tagline">🛡️ Fun • Personalized • Just for You</p>
+
+            <section class="result-card hidden" id="result-card">
+                <div class="close-container"><button class="close-button" id="close-button">×</button></div>
+                <div class="result-icon" id="result-icon"><p class="icon">✨</p></div>
+                <div>
+                    <h2 id="result-title">Your Recommendation</h2>
+                    <p id="result-message">Your recommendation will appear here.</p>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
